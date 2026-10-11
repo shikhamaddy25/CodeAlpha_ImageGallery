@@ -1,4 +1,4 @@
-# Wanderlust - Image Gallery
+# Wonderfull - Image Gallery
 
 A responsive image gallery created as part of my CodeAlpha Frontend Development Internship.
 
