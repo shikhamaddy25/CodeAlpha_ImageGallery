@@ -284,13 +284,10 @@ body {
 
 footer {
     padding: 30px;
-
+    margin-top: 20px;
     text-align: center;
-
     color: #6b6b6b;
-
     font-size: 0.85rem;
-
     border-top: 1px solid #deddd8;
 }
 
@@ -342,4 +339,82 @@ footer {
         height: 320px;
     }
 
+}
+/* ------------------------------
+   LIGHTBOX
+-------------------------------- */
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox img {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+/* Close button */
+
+.close-btn {
+    position: absolute;
+    top: 25px;
+    right: 35px;
+
+    background: none;
+    border: none;
+    color: white;
+
+    font-size: 40px;
+    cursor: pointer;
+}
+
+/* Previous / Next buttons */
+
+.prev-btn,
+.next-btn {
+    position: absolute;
+
+    top: 50%;
+    transform: translateY(-50%);
+
+    background: rgba(255, 255, 255, 0.15);
+    border: none;
+    color: white;
+
+    font-size: 35px;
+    padding: 10px 18px;
+
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.prev-btn {
+    left: 30px;
+}
+
+.next-btn {
+    right: 30px;
+}
+
+.prev-btn:hover,
+.next-btn:hover,
+.close-btn:hover {
+    opacity: 0.7;
+}
+html,
+body {
+    min-height: 100%;
+    overflow-x: hidden;
 }
